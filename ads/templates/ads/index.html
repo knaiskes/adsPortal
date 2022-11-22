@@ -1,7 +1,7 @@
 {% if latest_ad_list %}
 <ul>
   {% for ad in latest_ad_list %}
-  <li><a href="/ads/{{ ad.id }}/">{{ ad.title }}</a></li>
+  <li><a href="{% url 'detail' ad.id %}">{{ ad.title }}</a></li>
   {% endfor %}
 </ul>
 {% else %}
