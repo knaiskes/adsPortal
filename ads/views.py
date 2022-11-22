@@ -1,6 +1,5 @@
-#from django.shortcuts import render
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from .models import Ad
 
@@ -11,4 +10,5 @@ def index(request):
     return render(request, 'ads/index.html', context)
 
 def detail(request, ad_id):
-    return HttpResponse("This is the details page for: %s" % ad_id)
+    ad = get_object_or_404(Ad, pk=ad_id)
+    return render(request, 'ads/detail.html', {'ad': ad})
