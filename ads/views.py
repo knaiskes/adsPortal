@@ -1,14 +1,18 @@
-from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
+from django.urls import reverse
+from django.views import generic
 
 from .models import Ad
 
-def index(request):
-    latest_ad_list = Ad.objects.order_by('-pub_date')[:5]
-    output = ', '.join([a.title for a in latest_ad_list])
-    context = { 'latest_ad_list': latest_ad_list }
-    return render(request, 'ads/index.html', context)
+class IndexView(generic.ListView):
+    template_name = 'ads/index.html'
+    context_object_name = 'latest_ad_list'
 
-def detail(request, ad_id):
-    ad = get_object_or_404(Ad, pk=ad_id)
-    return render(request, 'ads/detail.html', {'ad': ad})
+    def get_queryset(self):
+        return Ad.objects.order_by('-pub_date')[:5]
+
+
+class DetailView(generic.DetailView):
+    model = Ad
+    template_name = 'ads/detail.html'
