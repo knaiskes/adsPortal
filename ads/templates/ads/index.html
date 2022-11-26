@@ -1,7 +1,6 @@
-{% load static %}
+{% extends 'ads/base.html' %}
 
-<link rel="stylesheet" href="{% static 'ads/style.css' %}">
-
+{% block content %}
 <ul class="list">
   <li>
     <h2>Ad's title</h2>
@@ -13,3 +12,4 @@
     </div>
   </li>
 </ul>
+{% endblock %}
