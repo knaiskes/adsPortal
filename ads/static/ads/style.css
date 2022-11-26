@@ -1,3 +1,15 @@
-body {
-    background-color: whitesmoke;
+.list li {
+  border: 1px solid #ffe066;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.list .cont {
+  margin-top: auto;
+  border-top: 1px solid #ffe066;
+  padding: 10px;
+  text-align: center;
+}
+.list .body {
+  padding: 10px;
 }

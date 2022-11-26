@@ -2,12 +2,14 @@
 
 <link rel="stylesheet" href="{% static 'ads/style.css' %}">
 
-{% if latest_ad_list %}
-<ul>
-  {% for ad in latest_ad_list %}
-  <li><a href="{% url 'ads:detail' ad.id %}">{{ ad.title }}</a></li>
-  {% endfor %}
+<ul class="list">
+  <li>
+    <h2>Ad's title</h2>
+    <div class="body">
+      <p>Ad's content goes here</p>
+    </div>
+    <div class="cont">
+      <a href="">Read More</a>
+    </div>
+  </li>
 </ul>
-{% else %}
-<p>No ads are available.</p>
-{% endif %}
