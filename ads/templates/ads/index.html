@@ -2,14 +2,16 @@
 
 {% block content %}
 <ul class="list">
+  {% for ad in latest_ad_list %}
   <li>
-    <h2>Ad's title</h2>
+    <h2>{{ ad.title }}</h2>
     <div class="body">
-      <p>Ad's content goes here</p>
+      <p>{{ ad.description|truncatechars:25 }}</p>
     </div>
     <div class="cont">
       <a href="">Read More</a>
     </div>
   </li>
+  {% endfor %}
 </ul>
 {% endblock %}
