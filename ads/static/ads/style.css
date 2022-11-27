@@ -16,8 +16,11 @@ body {
   text-align: center;
 }
 .list .body {
-  padding: 10px;
+    padding: 10px;
+    text-align: center;
 }
+
+.list h2 { text-align: center }
 
 .navbar {
     overflow: hidden;
