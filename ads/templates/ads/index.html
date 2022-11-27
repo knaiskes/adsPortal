@@ -9,7 +9,7 @@
       <p>{{ ad.description|truncatechars:25 }}</p>
     </div>
     <div class="cont">
-      <a href="">Read More</a>
+      <a href="{% url 'ads:detail' ad.pk %}">Read More</a>
     </div>
   </li>
   {% endfor %}
