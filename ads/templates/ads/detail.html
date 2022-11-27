@@ -1,5 +1,17 @@
-<h1>{{ ad.title }}</h1>
+{% extends 'ads/base.html' %}
 
-<h1>{{ ad.description }}</h1>
+{% block content %}
 
-<h1>{{ ad.pub_date }}</h1>
+<ul class="list">
+  <li>
+    <h2>{{ ad.title }}</h2>
+    <h2>{{ ad.pub_date }}</h2>
+    <h2>{{ ad.phone }}</h2>
+    <h2>{{ ad.ad_type }}</h2>
+    <div class="body">
+      <p>{{ ad.description }}</p>
+    </div>
+  </li>
+</ul>
+
+{% endblock %}
