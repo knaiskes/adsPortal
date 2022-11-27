@@ -4,14 +4,14 @@ body {
 }
 
 .list li {
-  border: 1px solid #ffe066;
+  border: 2px solid #293757;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
 }
 .list .cont {
   margin-top: auto;
-  border-top: 1px solid #ffe066;
+  border-top: 2px solid #293757;
   padding: 10px;
   text-align: center;
 }
