@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .list li {
   border: 1px solid #ffe066;
   border-radius: 5px;
@@ -12,4 +17,24 @@
 }
 .list .body {
   padding: 10px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-top: 3px solid #88E904;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-decoration-color: #88E904;
 }
