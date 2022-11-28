@@ -3,25 +3,6 @@ body {
     padding: 0;
 }
 
-.list li {
-  border: 2px solid #293757;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-}
-.list .cont {
-  margin-top: auto;
-  border-top: 2px solid #293757;
-  padding: 10px;
-  text-align: center;
-}
-.list .body {
-    padding: 10px;
-    text-align: center;
-}
-
-.list h2 { text-align: center }
-
 .navbar {
     overflow: hidden;
     background-color: #333333;
@@ -40,4 +21,39 @@ body {
 .navbar a:hover {
     text-decoration: underline;
     text-decoration-color: #88E904;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  margin: auto;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: arial;
+}
+
+.ad_type {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card a {
+    text-decoration: none;
+    color: white;
 }

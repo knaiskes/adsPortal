@@ -1,18 +1,12 @@
 {% extends 'ads/base.html' %}
 
 {% block content %}
-<ul class="list">
-  {% for ad in latest_ad_list %}
-  <br/>
-  <li>
-    <h2>{{ ad.title }}</h2>
-    <div class="body">
-      <p>{{ ad.description|truncatechars:25 }}</p>
-    </div>
-    <div class="cont">
-      <a href="{% url 'ads:detail' ad.pk %}">Read More</a>
-    </div>
-  </li>
-  {% endfor %}
-</ul>
+{% for ad in latest_ad_list %}
+<div class="card">
+  <h1>{{ ad.title }}</h1>
+  <p class="ad_type">{{ ad.ad_type }}</p>
+  <p>{{ ad.description }}</p>
+  <p><button><a href="{% url 'ads:detail' ad.pk %}">Read More</a></button></p>
+</div>
+{% endfor %}
 {% endblock %}
