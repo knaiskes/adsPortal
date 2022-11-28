@@ -3,6 +3,8 @@
 {% block content %}
 {% for ad in latest_ad_list %}
 <div class="card">
+  {% load static %}
+<img src="{% static 'ads/profile.jpg' %}" alt={{ ad.title }}>
   <h1>{{ ad.title }}</h1>
   <p class="ad_type">{{ ad.ad_type }}</p>
   <p>{{ ad.description }}</p>
