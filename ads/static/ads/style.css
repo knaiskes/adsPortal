@@ -3,25 +3,6 @@ body {
     padding: 0;
 }
 
-.list li {
-  border: 2px solid #293757;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-}
-.list .cont {
-  margin-top: auto;
-  border-top: 2px solid #293757;
-  padding: 10px;
-  text-align: center;
-}
-.list .body {
-    padding: 10px;
-    text-align: center;
-}
-
-.list h2 { text-align: center }
-
 .navbar {
     overflow: hidden;
     background-color: #333333;
