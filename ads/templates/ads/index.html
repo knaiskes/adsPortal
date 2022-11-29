@@ -8,7 +8,7 @@
   <h1>{{ ad.title }}</h1>
   <p class="ad_type">{{ ad.ad_type }}</p>
   <p>{{ ad.description }}</p>
-  <p><button><a href="{% url 'ads:detail' ad.pk %}">Read More</a></button></p>
+  <p><a href="{% url 'ads:detail' ad.pk %}"><button>Read More</button></a></p>
 </div>
 {% endfor %}
 {% endblock %}
