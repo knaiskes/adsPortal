@@ -1,17 +1,12 @@
 {% extends 'ads/base.html' %}
 
 {% block content %}
-
-<ul class="list">
-  <li>
-    <h2>{{ ad.title }}</h2>
-    <h2>{{ ad.pub_date }}</h2>
-    <h2>{{ ad.phone }}</h2>
-    <h2>{{ ad.ad_type }}</h2>
-    <div class="body">
-      <p>{{ ad.description }}</p>
-    </div>
-  </li>
-</ul>
-
+<div class="card">
+  {% load static %}
+  <img src="{% static 'ads/profile.jpg' %}" alt={{ ad.title }}>
+  <h1>{{ ad.title }}</h1>
+  <p class="ad_type">{{ ad.ad_type }}</p>
+  <p>{{ ad.description }}</p>
+  <p>{{ ad.phone }}</p>
+</div>
 {% endblock %}
