@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="{% static 'ads/style.css' %}">
     <title>{% block title %}Ads Portal{% endblock %}</title>
     <div class="navbar">
-      <a href="#"> Home </a>
+      <a href="{% url 'ads:index' %}"> Home </a>
       <a href="#"> Contact </a>
       <a style="float:right" href="#"> About </a>
     </div>
