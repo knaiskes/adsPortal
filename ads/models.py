@@ -8,7 +8,7 @@ class Type(models.Model):
 
 class Ad(models.Model):
     title = models.CharField(max_length=50)
-    description = models.CharField(max_length=120)
+    description = models.TextField(max_length=1000)
     pub_date = models.DateTimeField('date published')
     phone = models.CharField(max_length=20)
     image = models.ImageField(upload_to='images/')
