@@ -16,3 +16,8 @@ class IndexView(generic.ListView):
 class DetailView(generic.DetailView):
     model = Ad
     template_name = 'ads/detail.html'
+
+
+class PostAdView(generic.ListView):
+    model = Ad
+    template_name = 'ads/add.html'

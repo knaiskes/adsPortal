@@ -64,3 +64,17 @@ body {
     padding-top: 20px;
     width: 50%;
 }
+
+.post-ad {
+    font-size: 20px;
+}
+
+.post-ad p {
+    text-align: center;
+}
+
+.post-ad ul {
+    width: 40%;
+    margin: auto;
+    list-style-type: square;
+}
