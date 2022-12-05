@@ -78,3 +78,7 @@ body {
     margin: auto;
     list-style-type: square;
 }
+
+.about {
+    text-align: center;
+}
