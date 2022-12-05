@@ -9,7 +9,7 @@
   <p>Posted on {{ ad.pub_date|date:"D d M Y" }}</p>
   <p class="ad_type">{{ ad.ad_type }}</p>
   <p>{{ ad.description }}</p>
-  <p><a href="{% url 'ads:detail' ad.pk %}"><button>Read More</button></a></p>
+  <p><a href="{% url 'ads:detail' ad.pk %}"><button>View Ad</button></a></p>
 </div>
 {% endfor %}
 {% endblock %}
