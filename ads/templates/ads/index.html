@@ -5,6 +5,7 @@
 <div class="card">
   {% load static %}
   <h1>{{ ad.title }}</h1>
+  <h3>Price: {{ ad.price }} &euro;</h3>
   <img src={{ ad.image.url }} alt={{ ad.title }}>
   <p>Posted on {{ ad.pub_date|date:"D d M Y" }}</p>
   <p class="ad_type">{{ ad.ad_type }}</p>
