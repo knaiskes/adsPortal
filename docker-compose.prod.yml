@@ -2,7 +2,8 @@ version: '3.8'
 
 services:
   web:
-    build: .
+    build:
+      dockerfile: Dockerfile.prod
     command: gunicorn adsPortal.wsgi:application --bind 0.0.0.0:8000
     ports:
       - 8000:8000
