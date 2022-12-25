@@ -1,7 +1,10 @@
 from django.http import HttpResponseRedirect
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse
 from django.views import generic
+from django.views.generic.edit import FormView
+
+from ads.forms import PostAdForm
 
 from .models import Ad
 
@@ -18,9 +21,15 @@ class DetailView(generic.DetailView):
     template_name = 'ads/detail.html'
 
 
-class PostAdView(generic.ListView):
-    model = Ad
+class PostAdView(FormView):
+    #model = Ad
     template_name = 'ads/add.html'
+    form_class = PostAdForm
+    success_url = '/ads/post-ad'
+
+    def form_valid(self, form):
+        form.save()
+        return super().form_valid(form)
 
 
 class AboutView(generic.ListView):
