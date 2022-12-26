@@ -56,3 +56,12 @@ Visit [localhost:8000/ads/](http://localhost:8000/ads/)
 ```
 $ docker-compose down -v
 ```
+
+## Deploy infrastructure - Terraform
+
+```
+$ cd infrastructure/
+$ terraform init
+$ terraform apply
+$ terraform show # get deployment information
+```
