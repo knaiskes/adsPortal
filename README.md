@@ -3,6 +3,9 @@
 A free platform for hosting ads of any kind. The Web application is written
 in Django.
 
+# Video
+[![Video](https://i9.ytimg.com/vi_webp/YSvFmnqmmtM/mq2.webp?sqp=CICAu50G-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGA8gZShFMA8=&rs=AOn4CLBs1ysFm0p0zJNP5v5_mfNvNFaYnw)](https://youtu.be/YSvFmnqmmtM)
+
 ## Dependencies
 
 - Python 3.10
